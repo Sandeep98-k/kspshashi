@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 75px;
+        background-color: rgb(214, 235, 26);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+      }
+
+      .header-content {
+        font-size: 16px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 20px; 
+      }
+
+      .block2 {
+        display: flex;
+        margin-top: 75px; 
+        height: calc(100vh - 75px);
+        background-color: rgb(189, 121, 19);
+      }
+
+      aside {
+        flex: 0 0 100px;
+        background-color: rgb(61, 92, 10);
+      }
+
+      .block3 {
+        flex: 1;
+        background-color: rgb(167, 67, 67);
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+      footer {
+        width: 100%;
+        height: 50px;
+        background-color: rgb(214, 22, 102);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <div><a href="">Home</a></div>
+        <div><a href="">About-US</a></div>
+        <div><a href="">Contact-Us</a></div>
+      </div>
+    </header>
+
+    <div class="block2">
+      <aside>
+        <div>Student Form</div>
+        <div>Student Report</div>
+      </aside>
+
+      <main class="block3">
+        <section class="content">Content <p>
+            A best friend is a cherished companion, a source of unwavering support, and someone with whom you share a deep, trusting bond. They are someone who accepts you unconditionally, celebrates your successes, and offers comfort during difficult times. Essentially, a best friend is someone who makes you laugh louder, smile brighter, and feel more loved.
+        “Some people come and go, but I know you're here to stay. You're my forever friend, the one who's been with me through thick and thin.
+        I'm so grateful for our friendship, and I can't wait to see all the amazing things the future holds for us. 
+        </p></section>
+        <footer>Footer</footer>
+      </main>
+    </div>
+  </body>
+</html>
