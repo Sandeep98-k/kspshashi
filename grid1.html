@@ -1,45 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <style>
+    <meta charset="UTF-8">
+    <title>My Bestfriend Shashi</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    .container {
-      display: grid;
-      grid-template-columns: 100px 1fr;
-      height: 50vh;
-      background-color: rgb(244, 23, 252);
-      gap: 20px; 
-    }
-    .header {
-      background-color: rgb(42, 192, 12);
-      border: 2px solid black;
-      justify-content: center;
-      display: flex;
-      align-items: center;
-      
-    }
-    .main {
-      background-color: rgb(9, 244, 252);
-      border: 2px solid black;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+        .header {
+            width: 100%;
+            height: 75px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: blue;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
 
-    }
-  </style>
+        .sidebar {
+            position: fixed;
+            top: 75px; /* below the header */
+            left: 0;
+            width: 220px;
+            height: calc(100vh - 175px); /* Full height minus header and footer */
+            padding: 20px;
+            border-right: 1px solid #ccc;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .main {
+            margin-left: 240px; /* enough space for sidebar */
+            margin-top: 100px;  /* enough space for header */
+            margin-bottom: 120px; /* enough space for footer */
+            padding: 20px;
+            background-color: rgb(244, 23, 252);
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            z-index: 1000;
+        }
+    </style>
 </head>
 <body>
-  <div class="container"> 
-    
-    <header class="header">
-      <div class="header-content">
-        <div><a href="">Home</a></div>
-        <div><a href="">About-US</a></div>
-        <div><a href="">Contact-Us</a></div>
-      </div>
-    </header>
+    <div class="header">My Bestfriend Shashi</div>
+
+    <div class="sidebar">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+    </div>
+
     <div class="main">Main content</div>
-  </div>
-  
+
+    <div class="footer">
+        © My Bestfriend Name: Shashi
+    </div>
 </body>
 </html>
